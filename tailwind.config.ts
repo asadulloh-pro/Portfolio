@@ -2,11 +2,8 @@ import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/containers/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/layouts/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+    
   ],
   theme: {
     colors: {
@@ -24,7 +21,8 @@ const config: Config = {
     },
     extend: {
       boxShadow: {
-        hovered: 'inset 0px 0px 1rem 0px #58dad9, 0px 0px 1rem 0px #58dad9',
+        hovered_primary: 'inset 0px 0px 1rem 0px #58dad9, 0px 0px 1rem 0px #58dad9',
+        hovered_default: 'inset 0px 0px 1rem 0px transparent, 0px 0px 1rem 0px #58dad9'
       },
     },
   },
