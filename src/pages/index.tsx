@@ -11,6 +11,8 @@ export default function Home() {
       </Head>
       <div>
         <MainLayout />
+
+        {/* ZERO SECTION */}
         <div className="min-h-[100dvh] flex items-center justify-center flex-col gap-[1rem]">
           <h1 className="text-[4rem] text-primary">
             Become <span className="text-[transparent] bordertext">Pro</span>{' '}
@@ -30,6 +32,59 @@ export default function Home() {
               <GitHubIcon className="w-[1.5rem] h-[1.5rem]" />
               GitHub
             </Link>
+          </div>
+        </div>
+        <div className="min-h-[100dvh] container mx-auto grid gap-[4rem]">
+          <div className="grid grid-cols-3">
+            <div className="col-span-1 flex gap-[1rem] ">
+              <picture className="rotate-[6deg] shadow-hovered_default p-[1rem] rounded-[1rem] w-max h-max sticky top-[100px]">
+                <img src="/react.svg" alt="image" width={150} height={150} />
+              </picture>
+            </div>
+            <div className="col-span-2 min-h-[400px]">
+              <p className="text-primary text-[1.5rem]">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+                voluptatem enim nam. Quas beatae voluptatum, recusandae
+                veritatis possimus a est perferendis. Molestias, nulla voluptas
+                commodi sapiente earum eligendi. Veniam, aspernatur?
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-3">
+            <div className="col-span-2 min-h-[400px]">
+              <p className="text-primary text-[1.5rem]">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+                voluptatem enim nam. Quas beatae voluptatum, recusandae
+                veritatis possimus a est perferendis. Molestias, nulla voluptas
+                commodi sapiente earum eligendi. Veniam, aspernatur?
+              </p>
+            </div>
+            <div className="col-span-1 flex justify-end gap-[1rem]">
+              <picture className="rotate-[-6deg] shadow-hovered_default p-[1rem] rounded-[1rem] w-max h-max sticky top-[100px]">
+                <img src="/next.svg" alt="image" width={150} height={150} />
+              </picture>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 ">
+            <div className="col-span-1 flex gap-[1rem]">
+              <picture className="rotate-[-14deg] shadow-hovered_default rounded-[1rem] overflow-hidden  w-max h-max sticky top-[100px]">
+                <img
+                  src="/typescript.svg"
+                  alt="image"
+                  width={170}
+                  height={170}
+                  className=""
+                />
+              </picture>
+            </div>
+            <div className="col-span-2 min-h-[400px]">
+              <p className="text-primary text-[1.5rem]">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+                voluptatem enim nam. Quas beatae voluptatum, recusandae
+                veritatis possimus a est perferendis. Molestias, nulla voluptas
+                commodi sapiente earum eligendi. Veniam, aspernatur?
+              </p>
+            </div>
           </div>
         </div>
       </div>
