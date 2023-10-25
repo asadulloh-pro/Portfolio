@@ -1,7 +1,35 @@
 import { GitHubIcon } from '@/assets/svg';
 import MainLayout from '@/components/shared/main-layout';
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
+
+const skils = [
+  {
+    icon: '/react.svg',
+    title: 'React js',
+    text: ` Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Voluptates laboriosam aperiam ipsum sint? Veniam voluptate rem
+    itaque cum ratione, esse eius explicabo aspernatur dolor sequi
+    similique eaque, culpa corporis temporibus.`,
+  },
+  {
+    icon: '/next.svg',
+    title: 'Next js',
+    text: ` Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Voluptates laboriosam aperiam ipsum sint? Veniam voluptate rem
+    itaque cum ratione, esse eius explicabo aspernatur dolor sequi
+    similique eaque, culpa corporis temporibus.`,
+  },
+  {
+    icon: '/typescript.svg',
+    title: 'Typescript',
+    text: ` Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Voluptates laboriosam aperiam ipsum sint? Veniam voluptate rem
+    itaque cum ratione, esse eius explicabo aspernatur dolor sequi
+    similique eaque, culpa corporis temporibus.`,
+  },
+];
 
 export default function Home() {
   return (
@@ -9,7 +37,7 @@ export default function Home() {
       <Head>
         <title>Asadulloh Pro</title>
       </Head>
-      <div>
+      <div className='mb-[100px]'>
         <MainLayout />
 
         {/* ZERO SECTION */}
@@ -37,7 +65,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="min-h-[100dvh] container mx-auto grid gap-[4rem]">
+        <div className="container mx-auto grid gap-[4rem]">
           <div className="grid grid-cols-3">
             <div className="col-span-1 flex gap-[1rem] ">
               <div className="sticky top-[100px] flex flex-col h-max gap-[1rem] rotate-[6deg]">
@@ -49,9 +77,7 @@ export default function Home() {
                     height={180}
                   />
                 </picture>
-                <p className="text-addition text-center">
-                  July 2023 - Present
-                </p>
+                <p className="text-addition text-center">July 2023 - Present</p>
               </div>
             </div>
             <div className="col-span-2 min-h-[400px]">
@@ -127,6 +153,27 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="container mx-auto grid grid-cols-3 gap-[4rem] mt-[148px]">
+          {skils.map((elem) => (
+            <div
+              className="p-4 border border-addition rounded text-primary h-max"
+              key={elem.icon}
+            >
+              <div>
+                <Image
+                  src={elem.icon}
+                  width={100}
+                  height={100}
+                  alt="logo"
+                  className="w-[100px] h-[100px]"
+                />
+              </div>
+              <p className="text-bold text-[24px] mt-[12px]">{elem.title}</p>
+              <p className="opacity-[0.5]">{elem.text}</p>
+            </div>
+          ))}
         </div>
       </div>
     </>

@@ -24,6 +24,9 @@ const config: Config = {
         hovered_primary: 'inset 0px 0px 1rem 0px #58dad9, 0px 0px 1rem 0px #58dad9',
         hovered_default: 'inset 0px 0px 1rem 0px transparent, 0px 0px 1rem 0px #58dad9'
       },
+      backgroundColor: {
+        'glass': 'rgba(255, 255, 255, 0.5)',
+      },
     },
   },
   plugins: [],
