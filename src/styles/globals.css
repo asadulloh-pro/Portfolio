@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import "keen-slider/keen-slider.min.css";
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -26,5 +26,26 @@ body {
 .bordertext {
   color: transparent;
   -webkit-text-stroke: 3px var(--addition);
-  text-shadow: 0 0 20px rgba(88, 218, 217, 0.8); 
+  text-shadow: 0 0 20px rgba(88, 218, 217, 0.8);
+}
+
+.start_background {
+  background: url(/bg-divider.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.glass_background {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+}
+
+.projectblock {
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
+}
+
+.projectblock:hover {
+  
 }
