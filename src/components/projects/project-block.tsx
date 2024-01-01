@@ -1,10 +1,16 @@
 import Image from 'next/image';
 import Tag from './tag';
 import Link from 'next/link';
+import { FC } from 'react';
 
-const ProjectBlock = () => {
+type ProjectBlockType = {};
+
+const ProjectBlock: FC<ProjectBlockType> = () => {
   return (
-    <Link href={`/projects/1`} className="grid grid-cols-2 gap-[1rem] mt-8 bg-gradient-to-b from-gray-800 to-gray-900 p-5 shadow-2xl shadow-black/20  rounded-[0.5rem] projectblock">
+    <Link
+      href={`/projects/1`}
+      className="grid grid-cols-2 gap-[1rem] mt-8 bg-gradient-to-b from-gray-800 to-gray-900 p-5 shadow-2xl shadow-black/20  rounded-[0.5rem] projectblock"
+    >
       <div className="">
         <Image
           src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg"

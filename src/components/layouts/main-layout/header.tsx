@@ -14,6 +14,9 @@ const Header = () => {
           <Link href="/courses" className="text-primary hover:text-addition">
             Courses
           </Link> */}
+          <Link href="/about" className="text-primary hover:text-addition">
+            About
+          </Link>
           <Link href="/projects" className="text-primary hover:text-addition">
             Projects
           </Link>

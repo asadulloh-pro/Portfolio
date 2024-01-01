@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ZeroSection = () => {
   return (
-    <div className="min-h-[50rem] flex items-center justify-center flex-col gap-[1rem] start_background">
+    <div className="min-h-[50rem] flex items-center justify-center flex-col gap-[1rem] star_background">
       <div>
         <h1 className="text-[4rem] text-primary ">
           Become <span className="text-[transparent] bordertext">Pro</span> with
