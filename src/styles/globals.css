@@ -29,8 +29,15 @@ body {
   text-shadow: 0 0 20px rgba(88, 218, 217, 0.8);
 }
 
-.start_background {
+.star_background {
   background: url(/bg-divider.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+}
+
+.red_star_background {
+  background: url(/red-stars.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -47,5 +54,4 @@ body {
 }
 
 .projectblock:hover {
-  
 }
