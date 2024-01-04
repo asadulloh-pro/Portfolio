@@ -1,8 +1,6 @@
-import ZeroSection from '@/components/home/zero.section';
-import Head from 'next/head';
-import ContactForm from '@/components/shared/contactform';
-
-
+import ZeroSection from "@/components/home/zero.section";
+import Head from "next/head";
+import ContactForm from "@/components/shared/contactform";
 
 export default function Home() {
   return (
@@ -19,5 +17,5 @@ export default function Home() {
 }
 
 export function getStaticProps() {
-  return { props: { title: 'My Title', content: '...' } };
+  return { props: { title: "My Title", content: "..." } };
 }

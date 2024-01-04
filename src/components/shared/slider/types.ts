@@ -1,5 +1,5 @@
-import { KeenSliderOptions } from 'keen-slider/react';
-import { ReactNode } from 'react';
+import { KeenSliderOptions } from "keen-slider/react";
+import { ReactNode } from "react";
 
 export type SliderType = {
   config: KeenSliderOptions;

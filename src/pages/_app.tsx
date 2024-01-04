@@ -1,15 +1,15 @@
-import '@/styles/globals.css';
-import type { AppProps } from 'next/app';
-import dynamic from 'next/dynamic';
-import { useMemo } from 'react';
+import "@/styles/globals.css";
+import type { AppProps } from "next/app";
+import dynamic from "next/dynamic";
+import { useMemo } from "react";
 
 const layouts = {
-  main: dynamic(() => import('@/components/layouts/main-layout')),
+  main: dynamic(() => import("@/components/layouts/main-layout")),
 };
 
 export default function App({ Component, pageProps }: AppProps) {
   const Layout = useMemo(() => {
-    return layouts['main'];
+    return layouts["main"];
   }, []);
 
   return (

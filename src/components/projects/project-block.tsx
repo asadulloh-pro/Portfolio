@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Tag from './tag';
-import Link from 'next/link';
-import { FC } from 'react';
+import Image from "next/image";
+import Tag from "./tag";
+import Link from "next/link";
+import { FC } from "react";
 
 type ProjectBlockType = {};
 

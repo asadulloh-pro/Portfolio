@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { FC, memo } from 'react';
+import Image from "next/image";
+import { FC, memo } from "react";
 
 type SkillCardType = {
   icon: string;

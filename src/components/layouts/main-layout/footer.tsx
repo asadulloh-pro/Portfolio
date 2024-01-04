@@ -1,5 +1,5 @@
-import { LinkedinIcon, TelegramIcon, YoutubeIcon } from '@/assets/svg';
-import Link from 'next/link';
+import { LinkedinIcon, TelegramIcon, YoutubeIcon } from "@/assets/svg";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -45,21 +45,21 @@ const Footer = () => {
           <Link
             href="https://www.youtube.com/@asadullohpro"
             className="fill-addition flex items-center justify-center w-[2rem] h-[2rem]"
-            aria-label='youtube link'
+            aria-label="youtube link"
           >
             <YoutubeIcon />
           </Link>
           <Link
             href="https://t.me/asadullohpro"
             className="fill-addition flex items-center justify-center w-[2rem] h-[2rem]"
-            aria-label='telegram link'
+            aria-label="telegram link"
           >
             <TelegramIcon />
           </Link>
           <Link
             href="https://www.linkedin.com/in/asadulloh-sadirdinov-8252a3213/"
             className="fill-addition flex items-center justify-center w-[2rem] h-[2rem]"
-            aria-label='linkedin link'
+            aria-label="linkedin link"
           >
             <LinkedinIcon />
           </Link>

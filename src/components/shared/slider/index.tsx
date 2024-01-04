@@ -1,8 +1,8 @@
-import React, { FC, useCallback } from 'react';
-import { useKeenSlider } from 'keen-slider/react';
-import { SliderItemType, SliderType } from './types';
-import SliderItem from './SliderItem';
-import { Arrow } from '@/assets/svg';
+import React, { FC, useCallback } from "react";
+import { useKeenSlider } from "keen-slider/react";
+import { SliderItemType, SliderType } from "./types";
+import SliderItem from "./SliderItem";
+import { Arrow } from "@/assets/svg";
 
 const Slider: FC<SliderType> & {
   Item: FC<SliderItemType>;
@@ -27,7 +27,7 @@ const Slider: FC<SliderType> & {
               className="stroke-addition w-[2.5rem] h-[2.5rem] border border-addition flex items-center justify-center rounded-full hover:shadow-hovered_primary"
               type="button"
               onClick={onPrev}
-              aria-label='slide prev'
+              aria-label="slide prev"
             >
               <Arrow />
             </button>
@@ -35,7 +35,7 @@ const Slider: FC<SliderType> & {
               className="stroke-addition w-[2.5rem] h-[2.5rem] border border-addition flex items-center justify-center rounded-full rotate-[180deg] hover:shadow-hovered_primary"
               type="button"
               onClick={onNext}
-              aria-label='slide next'
+              aria-label="slide next"
             >
               <Arrow />
             </button>
