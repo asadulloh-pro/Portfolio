@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className="w-full min-h-[2.5rem] bg-dark py-[0.75rem] absolute top-0">
+    <header className="w-full min-h-[2.5rem] bg-dark py-[0.75rem] absolute top-0">
       <div className="container mx-auto flex items-center justify-between">
         <Link href="/" className="text-primary text-[1.5rem]">
           Asadulloh Pro
@@ -25,7 +25,7 @@ const Header = () => {
           </Link> */}
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -5,6 +5,7 @@ import { useMemo } from "react";
 
 const layouts = {
   main: dynamic(() => import("@/components/layouts/main-layout")),
+  user: dynamic(() => import("@/components/layouts/user-layout")),
 };
 
 export default function App({ Component, pageProps }: AppProps) {
